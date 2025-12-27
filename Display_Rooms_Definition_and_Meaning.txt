@@ -1,0 +1,32 @@
+﻿MINI PROJECT HANDBOOK ASSIGNMENT
+Course Code & Title: 25ITT11 - C Programming
+Module: Display Rooms Module
+
+Function Definition
+The displayRooms() function is a user-defined function used to read room details from a file and display them in a well-formatted tabular form. It helps users view all available and booked rooms in the hotel management system.
+Meaning of the Code
+
+1. struct Room r;
+   Declares a structure variable to store room details read from the file.
+
+2. FILE *fp = fopen("rooms.txt", "r");
+   Opens the file in read mode to access stored room records.
+
+3. if (fp == NULL)
+   Checks whether the file exists or is opened successfully.
+
+4. printf statements (table header)
+   Displays column headings for room number, type, price, and status.
+
+5. while (fscanf(...) != EOF)
+   Reads room data from the file until the end of file is reached.
+
+6. if (r.isBooked == 0)
+   Converts numeric booking status into readable form (Available or Booked).
+
+7. printf (formatted output)
+   Displays each room record neatly in tabular format.
+
+8. fclose(fp);
+   Closes the file after all room details are displayed.
+
